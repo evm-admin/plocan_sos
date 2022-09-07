@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<swes:InsertSensor xmlns:swes="http://www.opengis.net/swes/2.0"
+    xmlns:sos="http://www.opengis.net/sos/2.0"
+    xmlns:swe="http://www.opengis.net/swe/2.0"
+    xmlns:sml="http://www.opengis.net/sensorml/2.0"
+    xmlns:gml="http://www.opengis.net/gml/3.2"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:gco="http://www.isotc211.org/2005/gco"
+    xmlns:gmd="http://www.isotc211.org/2005/gmd" service="SOS" version="2.0.0" xsi:schemaLocation="http://www.opengis.net/sos/2.0 http://schemas.opengis.net/sos/2.0/sosInsertSensor.xsd  http://www.opengis.net/swes/2.0 http://schemas.opengis.net/swes/2.0/swes.xsd http://schemas.opengis.net/sensorml/2.0/sensorML.xsd">
+    <swes:procedureDescriptionFormat>http://www.opengis.net/sensorml/2.0</swes:procedureDescriptionFormat>
+    <swes:procedureDescription>
+        <sml:PhysicalComponent gml:id="CTD_WG_PLOCAN">
+            <gml:identifier codeSpace="uniqueID">CTD_WG_PLOCAN</gml:identifier>
+            <sml:identification>
+                <sml:IdentifierList>
+                    <sml:identifier>
+                        <sml:Term>
+                            <sml:label>Manufacturer</sml:label>
+                            <sml:value>Sea-Bird Scientific</sml:value>
+                        </sml:Term>
+                    </sml:identifier>
+                    <sml:identifier>
+                        <sml:Term>
+                            <sml:label>Model</sml:label>
+                            <sml:value>Glider Payload CTD (GPCTD)</sml:value>
+                        </sml:Term>
+                    </sml:identifier>
+                </sml:IdentifierList>
+            </sml:identification>
+            <sml:capabilities name="offerings">
+                <sml:CapabilityList>
+                    <sml:capability name="offeringID">
+                        <swe:Text definition="urn:ogc:def:identifier:OGC:offeringID">
+                            <swe:label>Ejemplo del CTD WaveGliderV2 Offering</swe:label>
+                            <swe:value>CTD_WaveGliderV2_Offering</swe:value>
+                        </swe:Text>
+                    </sml:capability>
+                </sml:CapabilityList>
+            </sml:capabilities>
+            <sml:featuresOfInterest>
+                <sml:FeatureList definition="http://www.opengis.net/def/featureOfInterest/identifier">
+                    <swe:label>CTD_WG_Sensor</swe:label>
+                    <sml:feature xlink:href="CTD_WG_Sensor"/>
+                </sml:FeatureList>
+            </sml:featuresOfInterest>
+            <sml:outputs>
+                <sml:OutputList>
+                    <sml:output name="sea_water_temperature">
+                        <swe:Quantity>
+                            <swe:uom code="degC"/>
+                        </swe:Quantity>
+                    </sml:output>
+                    <sml:output name="sea_water_pressure">
+                        <swe:Quantity>
+                            <swe:uom code="mbar"/>
+                        </swe:Quantity>
+                    </sml:output>
+                    <sml:output name="sea_water_electrical_conductivity">
+                        <swe:Quantity>
+                            <swe:uom code="S/m"/>
+                            <swe:constraint>
+                                <swe:AllowedValues/>
+                            </swe:constraint>
+                        </swe:Quantity>
+                    </sml:output>
+                </sml:OutputList>
+            </sml:outputs>
+            <sml:attachedTo xlink:title="WG_PLOCAN"/>
+        </sml:PhysicalComponent>
+    </swes:procedureDescription>
+    <swes:observableProperty>sea_water_temperature</swes:observableProperty>
+    <swes:observableProperty>sea_water_pressure</swes:observableProperty>
+    <swes:observableProperty>sea_water_electrical_conductivity</swes:observableProperty>
+    <swes:metadata>
+        <sos:SosInsertionMetadata>
+            <sos:observationType>http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement</sos:observationType>
+            <sos:observationType>http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_ComplexObservation</sos:observationType>
+            <sos:observationType>http://inspire.ec.europa.eu/featureconcept/TrajectoryObservation</sos:observationType>
+        </sos:SosInsertionMetadata>
+    </swes:metadata>
+</swes:InsertSensor>

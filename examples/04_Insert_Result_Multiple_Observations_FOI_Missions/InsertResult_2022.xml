@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sos:InsertResult xmlns:sos="http://www.opengis.net/sos/2.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" service="SOS" version="2.0.0" xsi:schemaLocation="http://www.opengis.net/sos/2.0 http://schemas.opengis.net/sos/2.0/sos.xsd">
+    <sos:template>CTD_Template_2022</sos:template>
+    <sos:resultValues>2022-03-02T14:39:0.000+00:00#20.4765#0.200000000000001#5.07722@2022-03-02T14:40:0.000+00:00#20.4583#0.21000000000000105#5.07541@2022-03-02T14:49:0.000+00:00#20.465#0.23#5.07641@2022-03-02T14:50:0.000+00:00#20.4586#0.21000000000000105#5.07561@2022-03-02T14:59:0.000+00:00#20.4213#0.200000000000001#5.07183</sos:resultValues>
+</sos:InsertResult>

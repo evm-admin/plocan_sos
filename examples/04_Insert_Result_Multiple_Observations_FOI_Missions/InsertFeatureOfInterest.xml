@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ifoi:InsertFeatureOfInterest xmlns:ifoi="http://www.opengis.net/ifoi/1.0"
+  xmlns:gml="http://www.opengis.net/gml/3.2"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:om="http://www.opengis.net/om/2.0"
+  xmlns:sams="http://www.opengis.net/samplingSpatial/2.0"
+  xmlns:sf="http://www.opengis.net/sampling/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" service="SOS" version="2.0.0" xsi:schemaLocation="http://www.opengis.net/ifoi/1.0 http://52north.org/schema/ifoi/1.0/InsertFeatureOfInterest.xsd http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd http://www.opengis.net/samplingSpatial/2.0 http://schemas.opengis.net/samplingSpatial/2.0/spatialSamplingFeature.xsd http://www.opengis.net/sampling/2.0 http://schemas.opengis.net/sampling/2.0/samplingFeature.xsd">
+  <ifoi:featureMember>
+    <sams:SF_SpatialSamplingFeature gml:id="ssf_LP_2022">
+      <gml:identifier codeSpace="">LA_PALMA_2022</gml:identifier>
+      <gml:name>Misión de La Palma 2022</gml:name>
+      <sf:type xlink:href="http://www.opengis.net/def/samplingFeatureType/OGC-OM/2.0/SF_SamplingPoint"/>
+      <sf:sampledFeature xlink:href="http://www.opengis.net/def/nil/OGC/0/unknown"/>
+      <sams:shape>
+        <gml:Point gml:id="p_LP_2022">
+          <gml:pos srsName="http://www.opengis.net/def/crs/EPSG/0/4326">26.75005 -18.83644</gml:pos>
+        </gml:Point>
+      </sams:shape>
+    </sams:SF_SpatialSamplingFeature>
+  </ifoi:featureMember>
+</ifoi:InsertFeatureOfInterest>

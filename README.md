@@ -4,7 +4,10 @@ Repositorio que contiene los ficheros necesarios para la inserción de sensores 
 
 ## Estructura del repositorio 📜
 
-- **[/examples](https://github.com/evm-admin/pinar/tree/main/data)**:
-  - **[/01_Una_Observacion](https://github.com/evm-admin/plocan_sos/tree/main/examples/01_Una_Observacion)**: Ejemplo en el que se inserta una única observación con el InsertObservation.
-  - **[/02_Multiples_Observaciones_Basico](https://github.com/evm-admin/plocan_sos/tree/main/examples/02_Multiples_Observaciones_Basico)**: Ejemplo en el que se insertan varias observaciones con el InsertObservation.
-  - **[/03_Insert_Result_One_Observation](https://github.com/evm-admin/plocan_sos/tree/main/examples/03_Insert_Result_One_Observation)**: Ejemplo en el que se insertan varias observaciones con el InsertResult.
+- **[/xml](https://github.com/evm-admin/plocan_sos/tree/main/xml)**:
+  - **[/01_example_WG_SV2](https://github.com/evm-admin/plocan_sos/tree/main/xml/01_example_WG_SV2)**: Carpeta que contiene todos los ficheros XML necesarios para insertar en el servicio SOS el caso de estudio.
+
+- **[/scripts](https://github.com/evm-admin/plocan_sos/tree/main/scripts)**:
+  - **[/etl.py](https://github.com/evm-admin/plocan_sos/tree/main/scripts/etl.py)**: Limpieza de ficheros proporcionados por PLOCAN y guardado de ficheros CSV por cada proceso físico del caso de estudio.
+  - **[/xml_creation_foi.py](https://github.com/evm-admin/plocan_sos/tree/main/scripts/xml_creation_foi.py)**: Creación del XML del FeatureOfInterest necesario para el caso de estudio.
+  - **[/xml_creation_result.py](https://github.com/evm-admin/plocan_sos/tree/main/scripts/xml_creation_result.py)**: Creación del XML del InsertResult necesario para el caso de estudio.

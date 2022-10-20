@@ -5,7 +5,8 @@ Repositorio que contiene los ficheros necesarios para la inserción de sensores 
 ## Estructura del repositorio 📜
 
 - **[/xml](https://github.com/evm-admin/plocan_sos/tree/main/xml)**:
-  - **[/01_example_WG_SV2](https://github.com/evm-admin/plocan_sos/tree/main/xml/01_example_WG_SV2)**: Carpeta que contiene todos los ficheros XML necesarios para insertar en el servicio SOS el caso de estudio.
+  - **[/01_caso_de_estudio_WG_SV2](https://github.com/evm-admin/plocan_sos/tree/main/xml/01_caso_de_estudio_WG_SV2)**: Carpeta que contiene todos los ficheros XML necesarios para insertar en el servicio SOS el caso de estudio.
+  - **[/02_examples](https://github.com/evm-admin/plocan_sos/tree/main/xml/02_examples)**: Carpeta que contiene ejemplos de los ficheros XML de las operaciones InsertObservation, InsertResult, InsertResultTemplate e InsertSensor.
 
 - **[/scripts](https://github.com/evm-admin/plocan_sos/tree/main/scripts)**:
   - **[/etl.py](https://github.com/evm-admin/plocan_sos/tree/main/scripts/etl.py)**: Limpieza de ficheros proporcionados por PLOCAN y guardado de ficheros CSV por cada proceso físico del caso de estudio.
